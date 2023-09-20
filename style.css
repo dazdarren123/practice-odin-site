@@ -1,6 +1,10 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 ul{
@@ -21,7 +25,6 @@ button{
 
 .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding: 10px;
 }
@@ -29,12 +32,15 @@ button{
 .logo{
     font-size: 24px;
     font-weight: 700;
+ 
 }
 
 .topsection{
     color: white;
-    background-color: #1F2937;
+    background-color: #1f2937;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .bikeimage{
@@ -45,12 +51,16 @@ button{
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 40px;
+    width: 1000px;
+    align-self: center;
 }
 
 .content{
     background-color: white;
     display: flex;
     flex-direction: column;
+    height: 500px;
 }
 
 .content_title{
@@ -66,6 +76,7 @@ button{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 .card{
@@ -81,4 +92,41 @@ button{
 .cardimage{
     width: 200px;
     height: 200px;
+}
+
+.quotecontainer{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.quote{
+    width: 800px;
+}
+
+.ctacontainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+}
+
+.cta{
+    background-color: #1f2937;
+    border-radius: 8px;
+    height: 200px;
+    margin: 100px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px
 }
